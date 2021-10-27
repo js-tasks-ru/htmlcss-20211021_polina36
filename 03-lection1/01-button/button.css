@@ -4,8 +4,9 @@
     border-radius: 8px;
     font: 16px/18.75px "Roboto";
     border: none;
+    box-sizing: border-box;
     cursor: pointer;
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out, color 200ms linear;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out, color 200ms linear, border 200ms ease-in-out;
 }
 
 .button_primary {
@@ -13,13 +14,18 @@
     color: var(--white);
 }
 
-.button_primary:hover {
+.button_primary:hover:enabled {
     background-color: var(--dark-blue-1);
 }
 
-.button_primary:active {
+.button_primary:active:enabled {
     background-color: var(--dark-blue-2);
     color: var(--grey-2);
+}
+
+.button_primary:disabled {
+    opacity: 50%;
+    cursor: not-allowed;
 }
 
 .button_secondary{
@@ -27,11 +33,36 @@
     color: var(--white);
 }
 
-.button_secondary:hover {
+.button_secondary:hover:enabled {
     background-color: var(--dark-purple-1);
 }
 
-.button_secondary:active {
+.button_secondary:active:enabled {
     background-color: var(--dark-purple-2);
     color: var(--grey-2);
+}
+
+.button_secondary:disabled {
+    opacity: 50%;
+    cursor: not-allowed;
+}
+
+.button_alternate {
+    background-color: var(--white);
+    color: var(--grey-4);
+    border: 1px solid var(--grey-3);
+}
+
+.button_alternate:hover:enabled {
+    border-color: var(--black);
+}
+
+.button_alternate:active:enabled {
+    color: var(--grey-4);
+    border-color: var(--grey-3);
+}
+
+.button_alternate:disabled {
+    opacity: 50%;
+    cursor: not-allowed;
 }
