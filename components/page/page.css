@@ -1,0 +1,7 @@
+.page {
+    background-color: var(--grey-1);
+}
+
+.page__main-container {
+    padding: 240px 0 240px 0;
+}
