@@ -3,14 +3,42 @@
     border-radius: 8px;
     padding: 24px 32px;
     font: 400 16px/24px "Inter";
+    margin-bottom: 8px;
 }
 
 .accordion__summary {
     display: block;
+    position: relative;
     color: var(--black);
 }
 
+.accordion__summary:hover {
+    color: var(--grey-4);
+}
+
+.accordion__summary:after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 12px;
+    background-image: url(chevron.svg);
+    background-repeat: no-repeat;
+    top: 25%;
+    right: 0;
+    text-align: center;
+    transition: all .35s;
+}
+
+.accordion[open] .accordion__summary:after {
+    transform: rotate(180deg);
+}
+
 .accordion__content {
+    margin: 0;
     padding: 16px 0;
     color: var(--grey-4);
+}
+
+.accordion__content:last-child {
+    padding-bottom: 0;
 }
