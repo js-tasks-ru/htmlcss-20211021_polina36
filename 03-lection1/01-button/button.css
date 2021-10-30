@@ -2,7 +2,7 @@
     height: 48px;
     padding: 0 64px;
     border-radius: 8px;
-    font: 16px/18.75px "Roboto";
+    font: 16px/19px "Roboto";
     border: none;
     box-sizing: border-box;
     cursor: pointer;
@@ -14,18 +14,18 @@
     color: var(--white);
 }
 
-.button_primary:hover:enabled {
+.button_primary:hover {
     background-color: var(--dark-blue-1);
 }
 
-.button_primary:active:enabled {
+.button_primary:active {
     background-color: var(--dark-blue-2);
     color: var(--grey-2);
 }
 
 .button_primary:disabled {
     opacity: 50%;
-    cursor: not-allowed;
+    pointer-events: none;
 }
 
 .button_secondary{
@@ -33,18 +33,18 @@
     color: var(--white);
 }
 
-.button_secondary:hover:enabled {
+.button_secondary:hover {
     background-color: var(--dark-purple-1);
 }
 
-.button_secondary:active:enabled {
+.button_secondary:active {
     background-color: var(--dark-purple-2);
     color: var(--grey-2);
 }
 
 .button_secondary:disabled {
     opacity: 50%;
-    cursor: not-allowed;
+    pointer-events: none;
 }
 
 .button_alternate {
@@ -53,16 +53,16 @@
     border: 1px solid var(--grey-3);
 }
 
-.button_alternate:hover:enabled {
+.button_alternate:hover {
     border-color: var(--black);
 }
 
-.button_alternate:active:enabled {
+.button_alternate:active {
     color: var(--grey-4);
     border-color: var(--grey-3);
 }
 
 .button_alternate:disabled {
     opacity: 50%;
-    cursor: not-allowed;
+    pointer-events: none;
 }
