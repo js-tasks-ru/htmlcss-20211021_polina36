@@ -23,3 +23,25 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+
+html,
+body {
+    height: 100%;
+}
+
+.page {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.main {
+    padding: 64px 0 200px 0;
+    flex-grow: 1;
+}
