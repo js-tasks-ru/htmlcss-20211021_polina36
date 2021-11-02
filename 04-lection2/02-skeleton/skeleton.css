@@ -13,15 +13,17 @@
 }
 
 .skeleton__name {
-    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .skeleton__name > .skeleton__text-line:first-child {
-    max-width: 172px;
+    max-width: 30%;
 }
 
 .skeleton__name > .skeleton__text-line:last-child {
-    max-width: 257px;
+    max-width: 40%;
     margin-bottom: 0;
 }
 
