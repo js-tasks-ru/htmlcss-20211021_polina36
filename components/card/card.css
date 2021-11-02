@@ -1,8 +1,5 @@
 .card {
-    flex: 0 0 auto;
-    width: 33%;
-    max-width: 350px;
-    margin-bottom: 30px;
+    flex: 1 1 calc((100% / 3) - 2rem);
     padding: 30px;
     box-sizing: border-box;
     background: var(--white);
