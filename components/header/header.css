@@ -1,7 +1,6 @@
 .header {
     box-sizing: border-box;
     height: 240px;
-    padding-left: 160px;
     padding-top: 96px;
     background-color: var(--white);
     border-bottom: 1px solid var(--grey-2);
