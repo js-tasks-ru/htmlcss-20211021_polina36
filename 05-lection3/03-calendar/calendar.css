@@ -9,6 +9,7 @@
 .calendar__wrapper {
     position: relative;
     padding-bottom: 100%;
+    margin-bottom: calc(-100% / 7);
 }
 
 .calendar__inner {
@@ -61,4 +62,8 @@
 
 .calendar__item-range:hover {
     background-color: var(--light-blue-2);
+}
+
+.calendar__item-empty {
+    pointer-events: none;
 }
