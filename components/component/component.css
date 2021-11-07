@@ -1,0 +1,10 @@
+.component {
+    padding: 32px 48px;
+    border-radius: 12px;
+    background-color: var(--white);
+}
+
+.component__title {
+    font: normal 28px/38px "Inter";
+    color: var(--grey-4);
+}
