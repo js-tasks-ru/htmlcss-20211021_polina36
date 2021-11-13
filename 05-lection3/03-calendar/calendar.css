@@ -9,7 +9,6 @@
 .calendar__wrapper {
     position: relative;
     padding-bottom: 100%;
-    margin-bottom: calc(-100% / 7);
 }
 
 .calendar__inner {
