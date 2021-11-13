@@ -1,0 +1,53 @@
+.modal {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    animation: fadein 0.5s;
+}
+
+.modal__content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 428px;
+    padding: 30px 40px;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    border-radius: 8px;
+}
+
+.modal__title {
+    font: 600 20px/24px "Inter";
+    color: var(--grey-5);
+    margin: 0 0 14px 0;
+}
+
+.modal__message {
+    font: 400 16px/24px "Inter";
+    color: var(--grey-4);
+    margin: 0;
+}
+
+.modal__close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background-image: url(close.svg);
+}
+
+.modal__close:hover {
+    background-color: var(--grey-2);
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
