@@ -1,0 +1,68 @@
+.calendar {
+    max-width: 300px;
+    padding: 28px 26px;
+    border-radius: 8px;
+    background-color: var(--white);
+    border: 1px solid var(--grey-3);
+}
+
+.calendar__wrapper {
+    position: relative;
+    padding-bottom: 100%;
+}
+
+.calendar__inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 1fr;
+}
+
+.calendar__title {
+    display: block;
+    margin-bottom: 16px;
+    font: 600 20px/24px "Inter";
+    text-align: center;
+    color: var(--grey-4);
+}
+
+.calendar__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font: normal 16px/20px "Source Sans Pro";
+    text-align: center;
+    color: var(--grey-4);
+}
+
+.calendar__item:hover {
+    background-color: var(--grey-2);
+    cursor: pointer;
+}
+
+.calendar__item-day {
+    font: normal 14px/20px "Inter";
+    color: var(--grey-5);
+}
+
+.calendar__item-selected {
+    background-color: var(--blue);
+    color: var(--white);
+    pointer-events: none;
+}
+
+.calendar__item-range {
+    background-color: var(--light-blue);
+}
+
+.calendar__item-range:hover {
+    background-color: var(--light-blue-2);
+}
+
+.calendar__item-empty {
+    pointer-events: none;
+}
