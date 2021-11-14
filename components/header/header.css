@@ -1,7 +1,7 @@
 .header {
     box-sizing: border-box;
     height: 240px;
-    padding-top: 96px;
+    padding-top: 24px;
     background-color: var(--white);
     border-bottom: 1px solid var(--grey-2);
 }
@@ -10,4 +10,9 @@
     margin: 0;
     font: 50px/64px "Inter";
     color: var(--black);
+}
+
+.header__logo {
+    height: 32px;
+    margin-bottom: 40px;
 }
