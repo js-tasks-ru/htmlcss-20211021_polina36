@@ -1,0 +1,20 @@
+.component-page {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: var(--grey-1);
+}
+
+.component-page__header {
+    height: 80px;
+    background-color: var(--white);
+}
+
+.component-page__main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 56px;
+    align-content: stretch;
+    padding: 36px 0 80px 0;
+}
