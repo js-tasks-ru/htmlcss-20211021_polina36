@@ -11,12 +11,16 @@
     --blue: #4263EB;
     --dark-blue-1: #2342C0;
     --dark-blue-2: #1e39a5;
+    --light-blue: #d5deff;
+    --light-blue-2: #beccff;
     --red: #F03D3E;
+    --orange: #D84910;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
     --grey-5: #334D6E;
+    --grey-6: #90A0B7;
 
     --error: var(--red);
     --success: var(--blue);
