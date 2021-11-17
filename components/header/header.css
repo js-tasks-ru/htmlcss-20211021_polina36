@@ -1,7 +1,7 @@
 .header {
     box-sizing: border-box;
     height: 240px;
-    padding-top: 96px;
+    padding-top: 24px;
     background-color: var(--white);
     border-bottom: 1px solid var(--grey-2);
 }
@@ -10,4 +10,25 @@
     margin: 0;
     font: 50px/64px "Inter";
     color: var(--black);
+}
+
+.header__logo {
+    height: 32px;
+    margin-bottom: 40px;
+}
+
+@media all and (max-width: 767px) {
+    .header {
+        padding-top: 16px;
+    }
+
+    .header__logo {
+        margin: 0 auto;
+        margin-bottom: 48px;
+    }
+
+    .header__title {
+        font-size: 28px;
+        line-height: 38px;
+    }
 }

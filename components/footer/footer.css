@@ -16,3 +16,9 @@
     font: 16px/24px "Inter";
     color: var(--black);
 }
+
+@media all and (max-width: 767px) {
+    .footer {
+        display: none;
+    }
+}
