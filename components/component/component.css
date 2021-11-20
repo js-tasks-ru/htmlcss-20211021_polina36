@@ -7,4 +7,18 @@
 .component__title {
     font: normal 28px/38px "Inter";
     color: var(--grey-4);
+    margin: 0;
+}
+
+@media all and (max-width: 767px) {
+    .component {
+        padding: 32px 16px;
+        border-radius: 0;
+        height: 100%;
+    }
+
+    .component__title {
+        font-size: 20px;
+        line-height: 26px;
+    }
 }
