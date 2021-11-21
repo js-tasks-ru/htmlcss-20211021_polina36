@@ -1,0 +1,79 @@
+.radio {
+    display: inline-block;
+}
+
+.radio__input {
+    position: absolute;
+    clip: rect (0, 0, 0, 0);
+    opacity: 0;
+    outline: none;
+}
+
+.radio__state {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio__ellipse {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
+.radio__input:checked ~ .radio__state .radio__control {
+    border: 2px solid var(--blue);
+}
+
+.radio__input:checked ~ .radio__state .radio__control .radio__ellipse {
+    background-color: var(--blue);
+}
+
+.radio__input:checked ~ .radio__state:hover .radio__control .radio__ellipse {
+    background-color: var(--dark-blue-1 );
+}
+
+.radio__input:checked ~ .radio__state:hover .radio__control {
+    border: 2px solid var(--dark-blue-1);
+}
+
+.radio__input:disabled ~ .radio__state .radio__control {
+    background-color: var(--grey-2);
+}
+
+.radio__input:disabled ~ .radio__state .radio__control .radio__ellipse {
+    background-color: var(--grey-2);
+}
+
+.radio__input:disabled ~ .radio__state {
+    pointer-events: none;
+}
+
+.radio__control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--grey-2);
+    background-color: var(--white);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.radio__state:hover .radio__control {
+    background-color: var(--grey-1);
+}
+
+.radio__state:hover .radio__control .radio__ellipse {
+    background-color: var(--grey-1);
+}
+
+
+.radio__label {
+    font: 400 16px/24px "Inter";
+    color: var(--grey-4);
+    margin-left: 12px;
+}
