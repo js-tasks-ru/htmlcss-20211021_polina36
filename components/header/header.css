@@ -6,6 +6,11 @@
     border-bottom: 1px solid var(--grey-2);
 }
 
+.header_component-page {
+    height: 80px;
+    border-bottom: none;
+}
+
 .header__title {
     margin: 0;
     font: 50px/64px "Inter";
@@ -25,6 +30,15 @@
     .header__logo {
         margin: 0 auto;
         margin-bottom: 48px;
+    }
+
+    .header__logo_component-page {
+        margin-bottom: 0;
+    }
+
+    .header_component-page { 
+        height: 64px;
+        background-color: transparent;
     }
 
     .header__title {
