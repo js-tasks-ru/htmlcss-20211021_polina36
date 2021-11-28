@@ -1,0 +1,68 @@
+.toggler {
+    display: inline-block;
+}
+
+.toggler__input {
+    position: absolute;
+    clip: rect (0, 0, 0, 0);
+    opacity: 0;
+    outline: none;
+}
+
+.toggler__state {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toggler__ellipse {
+    width: 24px;
+    height: 24px;
+    background-color: var(--grey-2);
+    border-radius: 50%;
+    margin-top: 1px;
+    margin-left: 1px;
+    transition: transform 200ms ease-in-out;
+}
+
+.toggler__input:checked ~ .toggler__state .toggler__control .toggler__ellipse {
+    background-color: var(--blue);
+    transform: translateX(24px);
+}
+
+.toggler__input:checked ~ .toggler__state:hover .toggler__control .toggler__ellipse {
+    background-color: var(--dark-blue-1);
+}
+
+.toggler__input:disabled ~ .toggler__state .toggler__control {
+    background-color: var(--grey-2);
+}
+
+.toggler__input:disabled ~ .toggler__state .toggler__control .toggler__ellipse {
+    background-color: var(--grey-3);
+    opacity: 25%;
+}
+
+.toggler__input:disabled ~ .toggler__state {
+    pointer-events: none;
+}
+
+.toggler__control {
+    width: 52px;
+    height: 28px;
+    border: 1px solid var(--grey-2);
+    background-color: var(--white);
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+.toggler__state:hover .toggler__control {
+    background-color: var(--grey-1);
+}
+
+.toggler__label {
+    font: 400 16px/24px "Inter";
+    color: var(--grey-4);
+    margin-left: 12px;
+}
