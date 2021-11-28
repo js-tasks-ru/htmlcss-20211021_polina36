@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="./components/footer/footer.css">
         <link rel="stylesheet" href="./components/card/card.css">
         <link rel="stylesheet" href="./components/preview/preview.css">
+        <link rel="stylesheet" href="./components/tabs/tabs.css">
     </head>
     <body>
         <div class="page"> 
@@ -19,58 +20,81 @@
                 </div>
             </header>
             <main class="main">
-                <div class="container">
-                    <div class="preview">
-                        <article class="card">
-                            <div class="card__component-container">
-
-                            </div>
-                            <h3 class="card__title">
-                                Component name
-                            </h3>
-                        </article>
-                        <article class="card">
-                            <div class="card__component-container">
-
-                            </div>
-                            <h3 class="card__title">
-                                Component name
-                            </h3>
-                        </article>
-                        <article class="card">
-                            <div class="card__component-container">
-
-                            </div>
-                            <h3 class="card__title">
-                                Component name
-                            </h3>
-                        </article>
-                        <article class="card">
-                            <div class="card__component-container">
-
-                            </div>
-                            <h3 class="card__title">
-                                Component name
-                            </h3>
-                        </article>
-                        <article class="card">
-                            <div class="card__component-container">
-
-                            </div>
-                            <h3 class="card__title">
-                                Component name
-                            </h3>
-                        </article>
-                        <article class="card">
-                            <div class="card__component-container">
-
-                            </div>
-                            <h3 class="card__title">
-                                Component name
-                            </h3>
-                        </article>
+                <nav class="tabs">
+                    <input type="radio" name="tab-btn" id="tab-btn-1" value="" class="tabs__input tabs__input_all" checked>
+                    <input type="radio" name="tab-btn" id="tab-btn-2" value="" class="tabs__input tabs__input_elements">
+                    <input type="radio" name="tab-btn" id="tab-btn-3" value="" class="tabs__input tabs__input_containers">
+                    <input type="radio" name="tab-btn" id="tab-btn-4" value="" class="tabs__input tabs__input_templates">
+                    <div class="tabs__labels">
+                        <div class="tabs__labels-container container">
+                            <label for="tab-btn-1" class="tabs__label tabs__label_all">All</label>
+                            <label for="tab-btn-2" class="tabs__label tabs__label_elements">Elements</label>
+                            <label for="tab-btn-3" class="tabs__label tabs__label_containers">Containers</label>
+                            <label for="tab-btn-4" class="tabs__label tabs__label_templates">Templates</label>
+                        </div>
                     </div>
-                </div>
+                    <div class="tabs__content tabs__content_all container">
+                        <div class="preview">
+                            <article class="card">
+                                <div class="card__component-container">
+    
+                                </div>
+                                <h3 class="card__title">
+                                    Component name
+                                </h3>
+                            </article>
+                            <article class="card">
+                                <div class="card__component-container">
+    
+                                </div>
+                                <h3 class="card__title">
+                                    Component name
+                                </h3>
+                            </article>
+                            <article class="card">
+                                <div class="card__component-container">
+    
+                                </div>
+                                <h3 class="card__title">
+                                    Component name
+                                </h3>
+                            </article>
+                            <article class="card">
+                                <div class="card__component-container">
+    
+                                </div>
+                                <h3 class="card__title">
+                                    Component name
+                                </h3>
+                            </article>
+                            <article class="card">
+                                <div class="card__component-container">
+    
+                                </div>
+                                <h3 class="card__title">
+                                    Component name
+                                </h3>
+                            </article>
+                            <article class="card">
+                                <div class="card__component-container">
+    
+                                </div>
+                                <h3 class="card__title">
+                                    Component name
+                                </h3>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="tabs__content tabs__content_elements container">
+                        Content 2
+                    </div>
+                    <div class="tabs__content tabs__content_containers container">
+                        Content 3
+                    </div>
+                    <div class="tabs__content tabs__content_templates container">
+                        Content 4
+                    </div>
+                </nav>
             </main>
             <footer class="footer">
                 <div class="container">
