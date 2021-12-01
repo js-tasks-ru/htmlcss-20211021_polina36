@@ -1,5 +1,4 @@
 .input {
-    width: 350px;
     position: relative;
 }
 
@@ -44,7 +43,7 @@
     background-repeat: no-repeat;
 }
 
-.input__field_invalid {
+.input_invalid .input__field {
     border-color: var(--error);
 }
 
