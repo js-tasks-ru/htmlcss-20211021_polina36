@@ -1,0 +1,63 @@
+.tabs {
+    width: 100%;
+}
+
+.tabs__menu {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--grey-2);
+}
+
+.tabs__menu-inner {
+    display: flex;
+    gap: 40px;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+    
+.tabs__input {
+    position: absolute;
+    clip: rect (0, 0, 0, 0);
+    opacity: 0;
+    outline: none;
+}
+    
+.tabs__content {
+    display: none;
+    padding-top: 64px;
+}
+    
+.tabs__input_all:checked~.tabs__content_all,
+.tabs__input_elements:checked~.tabs__content_elements,
+.tabs__input_containers:checked~.tabs__content_containers,
+.tabs__input_templates:checked~.tabs__content_templates {
+    display: block;
+}
+    
+.tabs__label {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font: 400 16px/24px "Inter";
+    padding: 8px 0;
+    cursor: pointer;
+    color: var(--grey-3);
+    border-bottom: 4px solid transparent;
+}
+
+.tabs__label:hover {
+    color: var(--black);
+}
+    
+.tabs__input_all:checked ~ .tabs__menu .tabs__label_all,
+.tabs__input_elements:checked ~ .tabs__menu .tabs__label_elements,
+.tabs__input_containers:checked ~ .tabs__menu .tabs__label_containers,
+.tabs__input_templates:checked ~ .tabs__menu .tabs__label_templates {
+    border-bottom: 4px solid var(--black);
+    color: var(--black);
+}
+
+@media all and (max-width: 767px) {
+    .tabs__menu-inner {
+        gap: 24px;
+    }
+}

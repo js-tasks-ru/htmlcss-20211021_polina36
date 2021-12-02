@@ -51,7 +51,7 @@ body {
 }
 
 .main {
-    padding: 64px 0 200px 0;
+    padding: 0 0 200px 0;
     flex-grow: 1;
 }
 
@@ -61,6 +61,6 @@ body {
     }
 
     .main {
-        padding: 24px 0 64px 0;
+        padding: 0 0 64px 0;
     }
 }
